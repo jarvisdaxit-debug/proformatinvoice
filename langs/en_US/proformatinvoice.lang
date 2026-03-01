@@ -1,0 +1,14 @@
+CHARSET=UTF-8
+
+Module136407Name=ProFormaInvoice
+Module136407Desc=Generate proforma invoices from orders and proposals
+
+ProFormaInvoiceSetup=ProFormaInvoice Setup
+Settings=Settings
+About=About
+
+ProFormaInvoiceTemplate=Proforma invoice template
+ProFormaInvoiceEmailSubject=Email subject for proforma invoices
+GenerateProFormaInvoice=Generate proforma invoice
+ProFormaInvoice=Proforma Invoice
+ProFormaInvoiceGenerated=Proforma invoice generated successfully

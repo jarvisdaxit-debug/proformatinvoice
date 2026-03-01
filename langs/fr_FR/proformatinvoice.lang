@@ -1,0 +1,14 @@
+CHARSET=UTF-8
+
+Module136407Name=ProFormaInvoice
+Module136407Desc=Générer des factures proforma depuis les commandes et propositions
+
+ProFormaInvoiceSetup=Configuration ProFormaInvoice
+Settings=Paramètres
+About=À propos
+
+ProFormaInvoiceTemplate=Modèle de facture proforma
+ProFormaInvoiceEmailSubject=Objet de l'email pour les factures proforma
+GenerateProFormaInvoice=Générer une facture proforma
+ProFormaInvoice=Facture Proforma
+ProFormaInvoiceGenerated=Facture proforma générée avec succès
