@@ -31,15 +31,16 @@ class InterfaceProFormatInvoiceHooks
         // Check if the object is an invoice or a proposal
         if (isset($object->element) && in_array($object->element, array('invoice', 'facture'))) {
             $checked = '';
-            // Check if 'options_is_proforma' is set and true
+            // Check if 'options_is_proforma' is set and true. 
+            // Assumes that getInvoiceExtrafields or similar mechanism populates $object->array_options
             if (isset($object->array_options['options_is_proforma']) && $object->array_options['options_is_proforma']) {
                 $checked = ' checked';
             }
 
             // Generate the HTML for the proforma checkbox
             $html = '<tr class="oddeven">';
-            $html .= '<td>'.$langs->trans("ProFormaInvoice").'</td>';
-            $html .= '<td><label><input type="checkbox" name="options_is_proforma" value="1"'.$checked.'> '.$langs->trans("IsProforma").'</label></td>';
+            $html .= '<td>'.$langs->trans("ProFormaInvoice").'</td>'; // Label for the checkbox
+            $html .= '<td><label><input type="checkbox" name="options_is_proforma" value="1"'.$checked.'> '.$langs->trans("IsProforma").'</label></td>'; // Checkbox input
             $html .= '</tr>';
             
             // Return HTML to be injected into the form
